@@ -91,6 +91,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_cadstro_senha" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#B304717A"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadstro_criaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cadstro_confirmaSenha"
+        app:layout_constraintVertical_bias="0.523">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:backgroundTint="#5A5A5A"
+            android:buttonTint="#BABABA"
+            android:text="QUERO SER MEMBRO"
+            android:textColor="#F3F3F3"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:backgroundTint="#5A5A5A"
+            android:buttonTint="#BABABA"
+            android:checked="false"
+            android:text="SOU PACIENTE"
+            android:textColor="#F3F3F3"
+            android:textSize="24sp" />
+    </RadioGroup>
+
     <Button
         android:id="@+id/btn_cadstro_criaConta"
         android:layout_width="360dp"
@@ -102,7 +139,8 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_cadstro_confirmaSenha"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintVertical_bias="0.902" />
 </androidx.constraintlayout.widget.ConstraintLayout>

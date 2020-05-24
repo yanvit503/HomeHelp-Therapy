@@ -10,7 +10,7 @@
         android:id="@+id/titulo_cadastro"
         android:layout_width="306dp"
         android:layout_height="60dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="Preencha seu cadastro"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
@@ -24,8 +24,8 @@
     <EditText
         android:id="@+id/text_cadstro_nome"
         android:layout_width="280dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/background_textbox"
         android:ems="10"
         android:hint="Digite seu nome"
@@ -39,7 +39,7 @@
     <EditText
         android:id="@+id/text_cadstro_email"
         android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_textbox"
         android:ems="10"
@@ -54,7 +54,7 @@
     <EditText
         android:id="@+id/text_cadstro_senha"
         android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_textbox"
         android:ems="10"
@@ -69,7 +69,7 @@
     <EditText
         android:id="@+id/text_cadstro_confirmaSenha"
         android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_textbox"
         android:ems="10"
@@ -83,8 +83,8 @@
 
     <Button
         android:id="@+id/btn_cadstro_criaConta"
-        android:layout_width="290dp"
-        android:layout_height="70dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/box_cria_conta"
         android:onClick="btnCriarConta"
@@ -94,5 +94,40 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_cadstro_confirmaSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/text_cadstro_confirmaSenha"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        android:background="#B304717A"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadstro_criaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cadstro_confirmaSenha">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5A5A5A"
+            android:buttonTint="#BABABA"
+            android:text="QUERO SER MEMBRO"
+            android:textColor="#F3F3F3"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5A5A5A"
+            android:buttonTint="#BABABA"
+            android:checked="false"
+            android:text="SOU PACIENTE"
+            android:textColor="#F3F3F3"
+            android:textSize="20sp" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
