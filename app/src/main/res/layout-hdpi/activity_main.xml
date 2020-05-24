@@ -4,76 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundmain"
-    android:foregroundTint="@android:color/background_light"
-    tools:context=".MainActivity">
-
+    android:background="@drawable/backgroundmain">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titulo"
         style="bold"
-        android:layout_width="367dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="293dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
         android:text="HomeHelp Therapy"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textScaleX="1"
-        android:textSize="36sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/text_login_email"
-        android:layout_width="360dp"
-        android:layout_height="64dp"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
         android:background="@drawable/boxemail"
         android:ems="10"
         android:hint="Digite seu e-mail..."
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColor="#121212"
-        android:textSize="24sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262"></EditText>
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.081"></EditText>
 
     <EditText
         android:id="@+id/text_login_senha"
-        android:layout_width="360dp"
-        android:layout_height="64dp"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
         android:background="@drawable/boxemail"
         android:ems="10"
         android:hint="Digite sua senha..."
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="#121212"
-        android:textSize="24sp"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_login_email"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="302dp"
+        android:layout_height="67dp"
+        android:src="@drawable/saojoselogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_login_email"
-        app:layout_constraintVertical_bias="0.077" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="388dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="640dp"
-        android:src="@drawable/saojoselogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="300dp"
-        android:layout_height="79dp"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
         android:layout_marginTop="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,16 +97,16 @@
             android:text="Entrar"
             android:textAlignment="center"
             android:textColor="#E6E6E6"
-            android:textSize="38sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout2"
-        android:layout_width="270dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="180dp"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -122,14 +122,14 @@
             android:src="@drawable/boxcadastro" />
 
         <TextView
-            android:id="@+id/titulo"
+            android:id="@+id/txtCadastro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Cadastre-se"
             android:textAlignment="center"
             android:textColor="#E6E6E6"
-            android:textSize="36sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
     </FrameLayout>
 
