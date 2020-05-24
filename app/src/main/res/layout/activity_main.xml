@@ -85,6 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
+            android:onClick="btnLogin"
             android:scaleType="fitXY"
             android:src="@drawable/boxentrar" />
 
@@ -96,7 +97,7 @@
             android:text="Entrar"
             android:textAlignment="center"
             android:textColor="#E6E6E6"
-            android:textSize="36sp"
+            android:textSize="38sp"
             android:textStyle="bold" />
 
     </FrameLayout>
@@ -116,6 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
+            android:onClick="btnCadastro"
             android:scaleType="fitXY"
             android:src="@drawable/boxcadastro" />
 

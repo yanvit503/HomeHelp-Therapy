@@ -73,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
+            android:onClick="btnLogin"
             android:scaleType="fitXY"
             android:src="@drawable/boxentrar" />
 
@@ -104,6 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
+            android:onClick="btnCadastro"
             android:scaleType="fitXY"
             android:src="@drawable/boxcadastro" />
 
