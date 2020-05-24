@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 
         if(!txtEmail.getText().toString().isEmpty() && !txtSenha.getText().toString().isEmpty())
         {
-            
+            startActivity(new Intent(this,Principal.class));
         }
         else
         {
