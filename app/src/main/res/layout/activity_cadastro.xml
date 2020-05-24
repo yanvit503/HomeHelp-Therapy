@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_cadastro"
+    android:textAlignment="center"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/titulo_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Preencha seu cadastro"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_cadstro_nome"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background_textbox"
+        android:ems="10"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cadastro" />
+
+    <EditText
+        android:id="@+id/text_cadstro_email"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/background_textbox"
+        android:ems="10"
+        android:hint="Digite seu  E-mail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cadastro" />
+
+    <EditText
+        android:id="@+id/text_cadstro_senha"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/background_textbox"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cadastro" />
+
+    <EditText
+        android:id="@+id/text_cadstro_confirmaSenha"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="412dp"
+        android:background="@drawable/background_textbox"
+        android:ems="10"
+        android:hint="Confirme sua senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cadastro" />
+
+    <Button
+        android:id="@+id/btn_cadstro_criaConta"
+        android:layout_width="326dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/box_cria_conta"
+        android:onClick="btnCriarConta"
+        android:text="Criar conta"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cadstro_confirmaSenha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
